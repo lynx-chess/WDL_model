@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -O3
+CXXFLAGS = -Wall -Wextra -std=c++17 -O3 -pthread
 
 NATIVE = -march=native
 
@@ -15,7 +15,7 @@ endif
 endif
 
 ifeq ($(uname_S), Darwin)
-	NATIVE =	
+	NATIVE =
 endif
 
 SRC_FILE = scoreWDLstat.cpp
