@@ -1,5 +1,23 @@
 # Generate SF WDL model based on data
 
+TLDR:
+
+- Place PGN files in `pgns/`
+
+- Map the repo directory to a volume attached to a python Docker container
+
+```bash
+docker run -it --rm --mount type=bind,src=.,dst=/home/docker -w /home/docker python:3.11-slim bash
+```
+
+- Once inside:
+
+```bash
+./run.sh
+```
+
+----
+
 Stockfish's "centipawn" evaluation is decoupled from the classical value
 of a pawn, and is calibrated such that an advantage of
 "100 centipawns" means the engine has a 50% probability to win
