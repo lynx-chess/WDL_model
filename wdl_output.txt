@@ -1,16 +1,18 @@
-Converting scores with NormalizeToPawnValue = 100.
-Reading score stats from scoreWDLstat.json.
-Retained (W,D,L) = (326275, 1812965, 329013) positions.
-Fit WDL model based on move.
-const int NormalizeToPawnValue = 119;
-Corresponding spread = 42;
-Corresponding normalized spread = 0.3546139264575196;
-Draw rate at 0.0 eval at move 32 = 0.8874907576062393;
+Converting evals with NormalizeToPawnValue = 100.
+Reading eval stats from scoreWDLstat.json.
+Retained (W,D,L) = (272715, 1185060, 273741) positions.
+Fit WDL model based on material.
+Initial objective function:  0.5710406539693513
+Final objective function:    0.571040170932652
+Optimization terminated successfully.
+const int NormalizeToPawnValue = 106;
+Corresponding spread = 50;
+Corresponding normalized spread = 0.47153252820598235;
+Draw rate at 0.0 eval at material 58 = 0.785806283069712;
 Parameters in internal value units: 
-as = ((2.087 * x / 32 + 17.279) * x / 32 + -9.476) * x / 32 + 109.883
-bs = ((2.023 * x / 32 + 4.475) * x / 32 + -28.017) * x / 32 + 63.992
-     constexpr double as[] = {   2.08668705,   17.27905217,   -9.47568848,  109.88339141};
-     constexpr double bs[] = {   2.02283074,    4.47542663,  -28.01679378,   63.99186702 };
-Plotting move/material dependence of model parameters.
-Processing done, plotting 2D data.
+p_a = ((-125.120 * x / 58 + 381.504) * x / 58 + -387.221) * x / 58 + 237.106
+p_b = ((-19.653 * x / 58 + 71.358) * x / 58 + -48.502) * x / 58 + 46.908
+    constexpr double as[] = {-125.11999431, 381.50441206, -387.22057929, 237.10649364};
+    constexpr double bs[] = {-19.65335125, 71.35751187, -48.50235437, 46.90811211};
+Preparing plots.
 Saved graphics to WDL_model_summary.png.
